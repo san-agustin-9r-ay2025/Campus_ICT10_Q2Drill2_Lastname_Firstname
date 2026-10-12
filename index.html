@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2</title>
+    <!-- START OF CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- START OF BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- START OF PYTHON -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+</head>
+<!-- black background with white content -->
+<body class="bg-dark text-light">
+    <!-- centered content, make row, with content padded to 3 -->
+    <div class="row text-center p-3 d-flex justify-content-center">
+        <!-- make text -->
+        <h3>The Jarifpa Pirates</h3>
+            <!-- make form -->
+            <form class="secondary col-6">
+                <!-- make inputs and button -->
+                <input type="text" id="fname" class="form-control mt-2" placeholder="Enter First Name">
+                <input type="text" id="lname" class="form-control mt-2" placeholder="Enter Last Name">
+                <input type="button" py-click="input" value="Enter" class="form-control btn btn-success mt-4">
+            </form>
+    </div>
+    <!-- make row with background be grey -->
+    <div class="row bg-secondary">
+        <!-- div for output -->
+        <div id="output">
+
+        </div>
+    </div>
+    <!-- connect index.html and main.py -->
+    <py-script src="main.py"></py-script>
+</body>
+</html>
